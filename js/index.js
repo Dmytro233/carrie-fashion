@@ -2,6 +2,13 @@
 $(document).ready(function() {
   "use strict";
 
+  //переключення картинки
+
+  $(".product .expand").on("click", function() {
+    var imgPath = $(this).attr("data-img-path");
+    $(".image img").attr("src", imgPath);
+  });
+
   // ------------------------------------------------------- //
   // Add shadow for navbar & show/hide scroll to top btn
   // ------------------------------------------------------ //
