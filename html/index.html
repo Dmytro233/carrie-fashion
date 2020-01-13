@@ -63,11 +63,10 @@
   <body>
     <!-- navbar-->
     <header class="header">
-      <!-- End Top Bar-->
       <nav class="navbar navbar-expand-lg fixed-top active">
         <div class="container">
           <a href="index.html" class="navbar-brand"
-            ><img src="/img/logo-instagram.png" alt="Shirt Store"
+            ><img src="/img/logo-facebook.png" alt="Shirt Store"
           /></a>
           <button
             type="button"
@@ -83,9 +82,11 @@
           <div id="navigation" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="active">
-                <a href="index.html" class="nav-link">Главная</a>
+                <a href="index.html" class="nav-link">худы-платье</a>
               </li>
-              <li><a href="text-page.html" class="nav-link">Следующая</a></li>
+              <li>
+                <a href="text-page.html" class="nav-link">женский костюм</a>
+              </li>
               <li>
                 <a href="contact.html" class="nav-link">+38 050 111 1111</a>
               </li>
@@ -113,6 +114,7 @@
                 <li class="size">
                   <div class="btn-group bootstrap-select dropup">
                     <select
+                      id="chose-size"
                       title="Choose Your Size"
                       class="selectpicker"
                       tabindex="-98"
@@ -130,16 +132,22 @@
                     <div class="minus-btn">
                       <i class="icon-android-remove"></i>
                     </div>
-                    <input type="text" value="1" class="quantity" />
+                    <input
+                      id="chose-count"
+                      type="text"
+                      value="1"
+                      class="quantity"
+                    />
                     <div class="plus-btn"><i class="icon-android-add"></i></div>
                   </div>
                 </li>
                 <li class="price">1400 грн</li>
               </ul>
             </div>
-            <a href="#" class="add-to-cart btn btn-primary"
-              >купить<i class="icon-cart-1"></i
-            ></a>
+            <a href="#contact" class="go-to-form btn btn-primary">
+              купить
+              <i class="icon-cart-1"></i>
+            </a>
           </div>
 
           <div class="col-lg-6">
@@ -165,18 +173,16 @@
                     style="width: 262.5px; margin-right: 20px;"
                   >
                     <div class="product">
-                      <div class="item-image">
-                        <a
-                          href="#"
-                          data-img-path="/img/IMG_0079.JPG"
-                          class="expand"
-                        >
-                          <img
-                            src="/img/IMG_0079.JPG"
-                            alt="shirt"
-                            class="img-fluid mx-auto"
-                          />
-                        </a>
+                      <div
+                        class="item-image"
+                        data-img-path="/img/IMG_0079.JPG"
+                        data-top-position="-20%"
+                      >
+                        <img
+                          src="/img/IMG_0079.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
                       </div>
                     </div>
                   </div>
@@ -185,18 +191,16 @@
                     style="width: 262.5px; margin-right: 20px;"
                   >
                     <div class="product">
-                      <div class="item-image">
-                        <a
-                          href="#"
-                          data-img-path="/img/IMG_0081.JPG"
-                          class="expand"
-                        >
-                          <img
-                            src="/img/IMG_0081.JPG"
-                            alt="shirt"
-                            class="img-fluid mx-auto"
-                          />
-                        </a>
+                      <div
+                        class="item-image"
+                        data-img-path="/img/IMG_0081.JPG"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/IMG_0081.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
                       </div>
                     </div>
                   </div>
@@ -205,18 +209,16 @@
                     style="width: 262.5px; margin-right: 20px;"
                   >
                     <div class="product">
-                      <div class="item-image">
-                        <a
-                          href="#"
-                          data-img-path="/img/IMG_0083.JPG"
-                          class="expand"
-                        >
-                          <img
-                            src="/img/IMG_0083.JPG"
-                            alt="shirt"
-                            class="img-fluid mx-auto"
-                          />
-                        </a>
+                      <div
+                        class="item-image"
+                        data-img-path="/img/IMG_0083.JPG"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/IMG_0083.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
                       </div>
                     </div>
                   </div>
@@ -225,18 +227,16 @@
                     style="width: 262.5px; margin-right: 20px;"
                   >
                     <div class="product">
-                      <div class="item-image">
-                        <a
-                          href="#"
-                          data-img-path="/img/IMGP7351.jpg"
-                          class="expand"
-                        >
-                          <img
-                            src="/img/IMGP7351.jpg"
-                            alt="shirt"
-                            class="img-fluid mx-auto"
-                          />
-                        </a>
+                      <div
+                        class="item-image"
+                        data-img-path="/img/IMGP7351.jpg"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/IMGP7351.jpg"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
                       </div>
                     </div>
                   </div>
@@ -245,18 +245,16 @@
                     style="width: 262.5px; margin-right: 20px;"
                   >
                     <div class="product">
-                      <div class="item-image">
-                        <a
-                          href="#"
-                          data-img-path="/img/IMGP7359.jpg"
-                          class="expand"
-                        >
-                          <img
-                            src="/img/IMGP7359.jpg"
-                            alt="shirt"
-                            class="img-fluid mx-auto"
-                          />
-                        </a>
+                      <div
+                        class="item-image"
+                        data-img-path="/img/IMGP7359.jpg"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/IMGP7359.jpg"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
                       </div>
                     </div>
                   </div>
@@ -265,18 +263,16 @@
                     style="width: 262.5px; margin-right: 20px;"
                   >
                     <div class="product">
-                      <div class="item-image">
-                        <a
-                          href="#"
-                          data-img-path="/img/IMG_0079.JPG"
-                          class="expand"
-                        >
-                          <img
-                            src="/img/IMG_0079.JPG"
-                            alt="shirt"
-                            class="img-fluid mx-auto"
-                          />
-                        </a>
+                      <div
+                        class="item-image"
+                        data-img-path="/img/IMG_0079.JPG"
+                        data-top-position="-20%"
+                      >
+                        <img
+                          src="/img/IMG_0079.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
                       </div>
                     </div>
                   </div>
@@ -285,18 +281,16 @@
                     style="width: 262.5px; margin-right: 20px;"
                   >
                     <div class="product">
-                      <div class="item-image">
-                        <a
-                          href="#"
-                          data-img-path="/img/IMG_0081.JPG"
-                          class="expand"
-                        >
-                          <img
-                            src="/img/IMG_0081.JPG"
-                            alt="shirt"
-                            class="img-fluid mx-auto"
-                          />
-                        </a>
+                      <div
+                        class="item-image"
+                        data-img-path="/img/IMG_0081.JPG"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/IMG_0081.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
                       </div>
                     </div>
                   </div>
@@ -305,18 +299,16 @@
                     style="width: 262.5px; margin-right: 20px;"
                   >
                     <div class="product">
-                      <div class="item-image">
-                        <a
-                          href="#"
-                          data-img-path="/img/IMG_0083.JPG"
-                          class="expand"
-                        >
-                          <img
-                            src="/img/IMG_0083.JPG"
-                            alt="shirt"
-                            class="img-fluid mx-auto"
-                          />
-                        </a>
+                      <div
+                        class="item-image"
+                        data-img-path="/img/IMG_0083.JPG"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/IMG_0083.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
                       </div>
                     </div>
                   </div>
@@ -392,7 +384,7 @@
     <!-- End Features Section-->
 
     <!-- Contact Section-->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="container text-center">
         <h2 class="heading-center">Купить</h2>
         <p class="lead">Чтобы продолжить заполните форму</p>
@@ -405,6 +397,9 @@
               novalidate="novalidate"
             >
               <div class="row">
+                <input id="size" type="hidden" name="size" value="" />
+                <input id="count" type="hidden" name="count" value="" />
+                <input id="color" type="hidden" name="color" value="" />
                 <div class="col-md-6">
                   <label for="username">Ваше Имя</label>
                   <input
@@ -416,7 +411,7 @@
                 </div>
                 <div class="col-md-6">
                   <label for="email">Ваш телефон</label>
-                  <input id="email" type="email" name="email" required="" />
+                  <input id="phone" type="text" name="phone" required="" />
                 </div>
                 <div class="col-md-12">
                   <label for="message">Дополнительные пожелания</label>
@@ -454,7 +449,9 @@
         <div class="contact-details text-center">
           <div class="row">
             <div class="col-sm-4">
-              <div class="icon"><i class="icon-marker"></i></div>
+              <div class="icon">
+                <img src="/img/logo-instagram.png" />
+              </div>
               <div class="text">
                 <p>T-Shirt Store, Hasicska, <br />Ostrava, Czech republic</p>
               </div>
@@ -467,7 +464,7 @@
               </div>
             </div>
             <div class="col-sm-4">
-              <div class="icon"><i class="icon-mail-1"></i></div>
+              <div class="icon"><i class="fab fa-instagram"></i></div>
               <div class="text">
                 <p>
                   <a href="mailto:support@shirtstore.com"
@@ -491,15 +488,6 @@
       <i class="fa fa-angle-up"></i>
     </div>
     <!-- End scroll to top button-->
-    <button
-      type="button"
-      data-toggle="collapse"
-      data-target="#style-switch"
-      id="style-switch-button"
-      class="btn btn-primary d-none d-lg-block"
-    >
-      <i class="fa fa-cog fa-2x"></i>
-    </button>
     <div id="style-switch" class="collapse">
       <h4 class="text-uppercase">Select theme colour</h4>
       <form class="mb-3">
@@ -534,6 +522,7 @@
     <script src="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/lightbox2/js/lightbox.min.js"></script>
     <script src="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/jquery-validation/jquery.validate.min.js"></script>
     <script src="/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/03c7ee9928.js"></script>
 
     <div
       id="lightboxOverlay"

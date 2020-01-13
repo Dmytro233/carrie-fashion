@@ -4,9 +4,42 @@ $(document).ready(function() {
 
   //переключення картинки
 
-  $(".product .expand").on("click", function() {
+  $(".product .item-image").on("click", function() {
     var imgPath = $(this).attr("data-img-path");
+    var imgPosition = $(this).attr("data-top-position");
+    $(".image img").css("top", imgPosition);
     $(".image img").attr("src", imgPath);
+  });
+
+  // понижиманню на кнопку 'купить' скролл на форму
+  $(".go-to-form").click(function() {
+    var target = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(target).offset().top - 86
+      },
+      1000
+    );
+  });
+
+  // записую значення розміру в форму при виборі
+  $("#chose-size").on("change", function() {
+    var size = $(this)[0].value;
+    $("#size")[0].value = size;
+    console.log(size);
+    console.log($("#size")[0].value);
+  });
+
+  // записую значення кількості в форму при виборі
+  $(".minus-btn").click(function() {
+    if (parseInt($("#chose-count").val(), 10) >= 1) {
+      $("#chose-count").val(parseInt($("#chose-count").val(), 10) - 1);
+      $("#count")[0].value = $("#chose-count")[0].value;
+    }
+  });
+  $(".plus-btn").click(function() {
+    $("#chose-count").val(parseInt($("#chose-count").val(), 10) + 1);
+    $("#count")[0].value = $("#chose-count")[0].value;
   });
 
   // ------------------------------------------------------- //
@@ -44,22 +77,6 @@ $(document).ready(function() {
     }
   });
 
-  // ---------------------------------------------- //
-  // Preventing URL update on navigation link click
-  // ---------------------------------------------- //
-  $(".buy").bind("click", function(e) {
-    var anchor = $(this);
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $(anchor.attr("href")).offset().top - 80
-        },
-        1000
-      );
-    e.preventDefault();
-  });
-
   // ------------------------------------------------------- //
   // Scroll to top on click
   // ------------------------------------------------------ //
@@ -68,31 +85,9 @@ $(document).ready(function() {
   });
 
   // ------------------------------------------------------- //
-  // Languages drop down initialization
-  // ------------------------------------------------------ //
-  $(".langs").dropdown();
-
-  // ------------------------------------------------------- //
   // Bootstrap Select initialization
   // ------------------------------------------------------ //
   $(".selectpicker").selectpicker();
-
-  // ------------------------------------------------------- //
-  // Parallax effect on divider section
-  // ------------------------------------------------------ //
-  $(window).scroll(function() {
-    var scroll = $(this).scrollTop();
-
-    if ($(window).width() > 1250) {
-      $("section.divider").css({
-        "background-position": "left -" + scroll / 6 + "px"
-      });
-    } else {
-      $("section.divider").css({
-        "background-position": "center bottom"
-      });
-    }
-  });
 
   // ------------------------------------------------------- //
   // Testimonials Slider
@@ -305,18 +300,6 @@ $(document).ready(function() {
     } else {
       $(".shipping-alternative").hide();
     }
-  });
-
-  // ------------------------------------------------------- //
-  // Increase/Reduce product amount
-  // ------------------------------------------------------ //
-  $(".minus-btn").click(function() {
-    if (parseInt($("input.quantity").val(), 10) >= 1) {
-      $("input.quantity").val(parseInt($("input.quantity").val(), 10) - 1);
-    }
-  });
-  $(".plus-btn").click(function() {
-    $("input.quantity").val(parseInt($("input.quantity").val(), 10) + 1);
   });
 
   // ------------------------------------------------------ //
