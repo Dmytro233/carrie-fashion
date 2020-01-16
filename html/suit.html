@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Carrier Fashion</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="all,follow" />
+    <!-- Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome CSS-->
+    <link
+      rel="stylesheet"
+      href="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- Custom font icons-->
+    <link
+      rel="stylesheet"
+      href="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/css/custom-font.css"
+    />
+    <!-- Google fonts - Open Sans-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+    />
+    <!-- owl carousel-->
+    <link
+      rel="stylesheet"
+      href="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/owl.carousel/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/owl.carousel/assets/owl.theme.default.css"
+    />
+    <!-- Bootstrap Select-->
+    <link
+      rel="stylesheet"
+      href="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/bootstrap-select/css/bootstrap-select.min.css"
+    />
+    <!-- Bootstrap Select-->
+    <link
+      rel="stylesheet"
+      href="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/lightbox2/css/lightbox.min.css"
+    />
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link id="new-stylesheet" rel="stylesheet" />
+    <!-- Favicon-->
+    <link
+      rel="shortcut icon"
+      href="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/img/favicon.ico"
+    />
+  </head>
+  <body>
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top active">
+        <div class="container">
+          <a href="index.html" class="navbar-brand"
+            ><img src="/img/logo/logo-facebook.png" alt="Shirt Store"
+          /></a>
+          <button
+            type="button"
+            data-toggle="collapse"
+            data-target="#navigation"
+            aria-controls="navigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler navbar-toggler-right"
+          >
+            Меню<i class="fa fa-align-justify"></i>
+          </button>
+          <div id="navigation" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li>
+                <a href="dress.html" class="nav-link">худы-платье</a>
+              </li>
+              <li class="active">
+                <a href="suit.html" class="nav-link">женский костюм</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">+38 050 111 1111</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Navbar-->
+
+    <!-- Big Product-->
+    <section class="big-product home-hero is-fixed">
+      <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-lg-6 info">
+            <div class="info-wrapper">
+              <h2>Женский спортивный костюм</h2>
+              <p class="lead">
+                На флисе. Свободный крой обеспечивает максимальную свободу
+                движений. Дизайн в стиле минимализма позволяет сочетать брюки и
+                свитшот с другими вещами из вашего гардероба.<br />
+                Состав: 70% хлопок, 30% полиэстер
+              </p>
+              <ul class="product-info list-unstyled">
+                <li class="size">
+                  <div class="btn-group bootstrap-select dropup">
+                    <select
+                      id="chose-size"
+                      title="Choose Your Size"
+                      class="selectpicker"
+                      tabindex="-98"
+                    >
+                      <option class="bs-title-option" value="">Размер</option>
+                      <option value="small">small</option>
+                      <option value="medium">medium</option>
+                      <option value="large">large</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="size">
+                  <div class="btn-group bootstrap-select dropup">
+                    <select
+                      id="chose-color"
+                      title="Choose Your Size"
+                      class="selectpicker"
+                      tabindex="-98"
+                    >
+                      <option class="bs-title-option" value="">Цвет</option>
+                      <option value="grey-melang">серый меланж</option>
+                      <option value="pink">розовый</option>
+                      <option value="red">бордовый</option>
+                      <option value="brown">бежевый</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="size">
+                  <div class="product-quantity">
+                    <div class="minus-btn">
+                      <i class="icon-android-remove"></i>
+                    </div>
+                    <input
+                      id="chose-count"
+                      type="text"
+                      value="1"
+                      class="quantity"
+                    />
+                    <div class="plus-btn"><i class="icon-android-add"></i></div>
+                  </div>
+                </li>
+                <li class="price">1400 грн</li>
+              </ul>
+            </div>
+            <a href="#contact" class="go-to-form btn btn-primary">
+              купить
+              <i class="icon-cart-1"></i>
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="image d-none d-lg-block">
+              <a href="#" data-target="#cart-popup-1" class="expand">
+                <img
+                  src="/img/suit/IMG_0079.JPG"
+                  alt="t-shirt"
+                  class="img-fluid mx-auto d-block"
+                />
+              </a>
+            </div>
+            <div
+              class="owl-carousel owl-theme text-left products-slider owl-loaded owl-drag"
+            >
+              <div class="owl-stage-outer">
+                <div
+                  class="owl-stage"
+                  style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1978px;"
+                >
+                  <div
+                    class="owl-item active"
+                    style="width: 262.5px; margin-right: 20px;"
+                  >
+                    <div class="product">
+                      <div
+                        class="item-image"
+                        data-img-path="/img/suit/IMG_0079.JPG"
+                        data-top-position="-20%"
+                      >
+                        <img
+                          src="/img/suit/IMG_0079.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 262.5px; margin-right: 20px;"
+                  >
+                    <div class="product">
+                      <div
+                        class="item-image"
+                        data-img-path="/img/suit/IMG_0083.JPG"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/suit/IMG_0083.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 262.5px; margin-right: 20px;"
+                  >
+                    <div class="product">
+                      <div
+                        class="item-image"
+                        data-img-path="/img/suit/IMG_0081.JPG"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/suit/IMG_0081.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 262.5px; margin-right: 20px;"
+                  >
+                    <div class="product">
+                      <div
+                        class="item-image"
+                        data-img-path="/img/suit/IMG_0073.JPG"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/suit/IMG_0073.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 262.5px; margin-right: 20px;"
+                  >
+                    <div class="product">
+                      <div
+                        class="item-image"
+                        data-img-path="/img/suit/IMG_0072.JPG"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/suit/IMG_0072.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 262.5px; margin-right: 20px;"
+                  >
+                    <div class="product">
+                      <div
+                        class="item-image"
+                        data-img-path="/img/suit/IMGP7351.jpg"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/suit/IMGP7351.jpg"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 262.5px; margin-right: 20px;"
+                  >
+                    <div class="product">
+                      <div
+                        class="item-image"
+                        data-img-path="/img/suit/IMGP7359.jpg"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/suit/IMGP7359.jpg"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 262.5px; margin-right: 20px;"
+                  >
+                    <div class="product">
+                      <div
+                        class="item-image"
+                        data-img-path="/img/suit/IMG_0064.JPG"
+                        data-top-position="-20%"
+                      >
+                        <img
+                          src="/img/suit/IMG_0064.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 262.5px; margin-right: 20px;"
+                  >
+                    <div class="product">
+                      <div
+                        class="item-image"
+                        data-img-path="/img/suit/IMG_0065.JPG"
+                        data-top-position="-20%"
+                      >
+                        <img
+                          src="/img/suit/IMG_0065.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 262.5px; margin-right: 20px;"
+                  >
+                    <div class="product">
+                      <div
+                        class="item-image"
+                        data-img-path="/img/suit/IMG_0049.JPG"
+                        data-top-position="-20%"
+                      >
+                        <img
+                          src="/img/suit/IMG_0049.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 262.5px; margin-right: 20px;"
+                  >
+                    <div class="product">
+                      <div
+                        class="item-image"
+                        data-img-path="/img/suit/IMG_0053.JPG"
+                        data-top-position="-20%"
+                      >
+                        <img
+                          src="/img/suit/IMG_0053.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 262.5px; margin-right: 20px;"
+                  >
+                    <div class="product">
+                      <div
+                        class="item-image"
+                        data-img-path="/img/suit/IMG_0054.JPG"
+                        data-top-position="0"
+                      >
+                        <img
+                          src="/img/suit/IMG_0054.JPG"
+                          alt="shirt"
+                          class="img-fluid mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Big Product-->
+
+    <!-- Features Section-->
+    <section class="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 info">
+            <h2 class="heading-left">Our Products' <br />Specialities</h2>
+            <h3>More than just a look</h3>
+            <p class="lead">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum.
+            </p>
+            <a
+              href="#"
+              class="read-more btn btn-primary d-none d-lg-inline-block"
+              >Read More</a
+            >
+          </div>
+          <div class="col-lg-6 items">
+            <div class="row">
+              <div class="col-md-6 feature">
+                <div class="icon"><i class="icon-shirt-and-tie"></i></div>
+                <div class="text">
+                  <h4>Unique Design</h4>
+                  <p>Suspendisse posuere, diam in bibendum posuere, diam</p>
+                </div>
+              </div>
+              <div class="col-md-6 feature">
+                <div class="icon"><i class="icon-shirt"></i></div>
+                <div class="text">
+                  <h4>Perfect fit clothes</h4>
+                  <p>Suspendisse posuere, diam in bibendum posuere, diam</p>
+                </div>
+              </div>
+              <div class="col-md-6 feature">
+                <div class="icon"><i class="icon-badge"></i></div>
+                <div class="text">
+                  <h4>Original Quality</h4>
+                  <p>Suspendisse posuere, diam in bibendum posuere, diam</p>
+                </div>
+              </div>
+              <div class="col-md-6 feature">
+                <div class="icon"><i class="icon-price-tag"></i></div>
+                <div class="text">
+                  <h4>Competitive Prices</h4>
+                  <p>Suspendisse posuere, diam in bibendum posuere, diam</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <a href="#" class="read-more btn btn-primary d-lg-none"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Features Section-->
+
+    <!-- Contact Section-->
+    <section id="contact" class="contact">
+      <div class="container text-center">
+        <h2 class="heading-center">Купить</h2>
+        <p class="lead">Чтобы продолжить заполните форму</p>
+        <div class="row">
+          <div class="form-holder col-md-10 mx-auto">
+            <form
+              id="contact-form"
+              action="#"
+              method="post"
+              novalidate="novalidate"
+            >
+              <div class="row">
+                <input id="size" type="hidden" name="size" value="" />
+                <input id="count" type="hidden" name="count" value="" />
+                <input id="color" type="hidden" name="color" value="" />
+                <input id="model" type="hidden" name="model" value="" />
+                <div class="col-md-6">
+                  <label for="username">Ваше Имя</label>
+                  <input
+                    id="username"
+                    type="text"
+                    name="username"
+                    required=""
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email">Ваш телефон</label>
+                  <input id="phone" type="text" name="phone" required="" />
+                </div>
+                <div class="col-md-12">
+                  <label for="message">Дополнительные пожелания</label>
+                  <textarea id="message" name="message" required=""></textarea>
+                </div>
+                <div class="col-md-12 text-right submit-holder">
+                  <button type="submit">
+                    Отпавить <i class="fa fa-circle"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section-->
+
+    <!-- Cart Popup-->
+    <div id="cart-popup-1" class="cart-popup-overlay">
+      <div class="cart-popup">
+        <div class="container">
+          <div class="close-btn"><i class="icon-close"></i></div>
+          <div class="item-profile">
+            <img src="/img/dress/IMG_7759.JPG" alt="dress" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Cart Popup-->
+
+    <!-- Footer-->
+    <footer>
+      <div class="container">
+        <div class="contact-details text-center">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="icon">
+                <img src="/img/logo/logo-instagram.png" />
+              </div>
+              <div class="text">
+                <p>Carrie Fashion, <br />Ukraine</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon"><i class="icon-phone-1"></i></div>
+              <div class="text">
+                <p>+38 050 111 1111</p>
+                <p>+38 050 111 1112</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon"><i class="fab fa-instagram"></i></div>
+              <div class="text">
+                <p>
+                  <a href="#">carrie_fashioninstagram</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer-->
+
+    <!-- Scroll to top button-->
+    <div id="scrollTop" style="display: none;">
+      <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- End scroll to top button-->
+
+    <div id="style-switch" class="collapse">
+      <h4 class="text-uppercase">Select theme colour</h4>
+      <form class="mb-3">
+        <select name="colour" id="colour" class="form-control">
+          <option value="">select colour variant</option>
+          <option value="default">red</option>
+          <option value="pink">pink</option>
+          <option value="green">green</option>
+          <option value="violet">violet</option>
+          <option value="sea">sea</option>
+          <option value="blue">blue</option>
+        </select>
+      </form>
+      <p>
+        <img
+          src="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/img/template-mac.png"
+          alt=""
+          class="img-fluid"
+        />
+      </p>
+      <p class="text-muted text-small">
+        Stylesheet switching is done via JavaScript and can cause a blink while
+        page loads. This will not happen in your production code.
+      </p>
+    </div>
+    <!-- JavaScript files-->
+    <script src="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/jquery/jquery.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/jquery.cookie/jquery.cookie.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/03c7ee9928.js"></script>
+
+    <div
+      id="lightboxOverlay"
+      class="lightboxOverlay"
+      style="display: none;"
+    ></div>
+    <div id="lightbox" class="lightbox" style="display: none;">
+      <div class="lb-outerContainer">
+        <div class="lb-container">
+          <img
+            class="lb-image"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          />
+          <div class="lb-nav">
+            <a class="lb-prev" href=""></a>
+            <a class="lb-next" href=""></a>
+          </div>
+          <div class="lb-loader">
+            <a class="lb-cancel"></a>
+          </div>
+        </div>
+      </div>
+      <div class="lb-dataContainer">
+        <div class="lb-data">
+          <div class="lb-details">
+            <span class="lb-caption"></span>
+            <span class="lb-number"></span>
+          </div>
+          <div class="lb-closeContainer">
+            <a class="lb-close"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
