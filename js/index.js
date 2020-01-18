@@ -1,13 +1,29 @@
 $(document).ready(function() {
   "use strict";
 
-  // Select a main picture
+  // Select a main picture and top-picture
   $(".product .item-image").on("click", function() {
     var imgPath = $(this).attr("data-img-path");
     var imgPosition = $(this).attr("data-top-position");
 
     $(".image img").css("top", imgPosition);
     $(".image img").attr("src", imgPath);
+
+    $(".selected-product img").css("top", imgPosition);
+    $(".selected-product img").attr("src", imgPath);
+  });
+
+  // Swich logo when header fixed
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 40) {
+      $("nav.navbar .navbar-brand img").css("max-height", "150px");
+      $("a.logo").css("display", "none");
+      $("a.logo-product").css("display", "block");
+    } else {
+      $("nav.navbar .navbar-brand img").css("max-height", "100px");
+      $("a.logo").css("display", "block");
+      $("a.logo-product").css("display", "none");
+    }
   });
 
   // Scroll to contact after click "Купить"
@@ -25,16 +41,14 @@ $(document).ready(function() {
   $("#chose-size").on("change", function() {
     var size = $(this).val();
     $("#size").val(size);
-    console.log(size);
-    console.log($("#size").val());
+    $(".selected-size-form").text(`Размер: ${size}`);
   });
 
   // Add color to form
   $("#chose-color").on("change", function() {
     var color = $(this).val();
     $("#color").val(color);
-    console.log(color);
-    console.log($("#color").val());
+    $(".selected-color-form").text(`Цвет: ${color}`);
   });
 
   // Add count to form
