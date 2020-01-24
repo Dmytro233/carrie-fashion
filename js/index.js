@@ -5,26 +5,59 @@ $(document).ready(function() {
   $(".product .item-image").on("click", function() {
     var imgPath = $(this).attr("data-img-path");
     var imgPosition = $(this).attr("data-top-position");
+    var imgPathLarge = imgPath.slice(0, -4) + "large" + imgPath.slice(-4);
 
     $(".image img").css("top", imgPosition);
-    $(".image img").attr("src", imgPath);
+    $(".image img").attr("src", imgPathLarge);
 
     $(".selected-product img").css("top", imgPosition);
     $(".selected-product img").attr("src", imgPath);
   });
 
   // Swich logo when header fixed
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 40) {
-      $("nav.navbar .navbar-brand img").css("max-height", "150px");
-      $("a.logo").css("display", "none");
-      $("a.logo-product").css("display", "block");
-    } else {
-      $("nav.navbar .navbar-brand img").css("max-height", "100px");
-      $("a.logo").css("display", "block");
-      $("a.logo-product").css("display", "none");
-    }
-  });
+  if ($(window).width() > 575) {
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 40) {
+        $("nav.navbar .navbar-brand img").css("max-height", "150px");
+        $("a.logo").css("display", "none");
+        $("a.logo-product").css("display", "block");
+      } else {
+        $("nav.navbar .navbar-brand img").css({
+          "max-height": "100px",
+          "padding-top": "5px",
+          "padding-bottom": "5px"
+        });
+        $("a.logo").css("display", "block");
+        $("a.logo-product").css("display", "none");
+      }
+    });
+  } else {
+    $("nav.navbar .navbar-brand img").css({
+      "max-height": "50px"
+    });
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 40) {
+        $("nav.navbar .navbar-brand img").css("max-height", "75px");
+        $(".selected-product").css({
+          height: "50px",
+          width: "170px",
+          overflow: "hidden"
+        });
+        $(".top-description").css({
+          top: "0",
+          "margin-left": "5px"
+        });
+        $("a.logo").css("display", "none");
+        $("a.logo-product").css("display", "block");
+      } else {
+        $("nav.navbar .navbar-brand img").css({
+          "max-height": "50px"
+        });
+        $("a.logo").css("display", "block");
+        $("a.logo-product").css("display", "none");
+      }
+    });
+  }
 
   // Scroll to contact after click "Купить"
   $(".go-to-form").click(function() {
